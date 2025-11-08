@@ -1,13 +1,13 @@
 runtime: python311
 
-instance_class: F1
+entrypoint: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
 
-entrypoint: streamlit run app.py
+instance_class: F1
 
 env_variables:
   STREAMLIT_SERVER_HEADLESS: "true"
-  STREAMLIT_SERVER_ENABLE_CORS: "true"
-  STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION: "true"
+  STREAMLIT_SERVER_ENABLE_CORS: "false"
+  STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION: "false"
 
 automatic_scaling:
   target_cpu_utilization: 0.65
