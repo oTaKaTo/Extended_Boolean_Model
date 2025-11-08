@@ -12,6 +12,8 @@ A complete implementation of the Extended Boolean Model (EBM) for Information Re
 - ✅ Interactive Streamlit GUI
 - ✅ Step-by-step calculation display
 - ✅ Document ranking with tie-breaking
+- ✅ **Gemini API comparison** - Compare local results with Gemini API rankings
+- ✅ Visual difference highlighting and statistics
 
 ## Installation
 
@@ -107,6 +109,18 @@ EBM/
 7. **Similarity Scores** - Computed similarity for each document
 8. **Final Ranking** - Documents ranked by similarity (ties broken by document ID)
 9. **Export Results** - Download rankings as CSV or JSON
+10. **🆕 Gemini API Comparison** - Compare local results with Gemini API rankings side-by-side
+
+## Gemini API Comparison
+
+Compare your local EBM results with Gemini API rankings to validate calculations and identify differences.
+
+**Quick Start:**
+1. Run `python app.py` to get Gemini results
+2. Run `python extract_gemini_ranking.py` to extract JSON
+3. Paste JSON into the Streamlit GUI comparison section
+
+See [GEMINI_COMPARISON.md](GEMINI_COMPARISON.md) for detailed instructions.
 
 ## Author
 

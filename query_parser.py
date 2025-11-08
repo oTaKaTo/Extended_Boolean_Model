@@ -4,7 +4,7 @@ Parses Boolean queries and converts them to expression trees
 """
 
 import re
-from typing import Union, List
+from typing import List
 
 
 class QueryParser:
