@@ -2,7 +2,7 @@ runtime: python311
 
 instance_class: F1
 
-entrypoint: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+entrypoint: streamlit run app.py --server.port=80 --server.address=0.0.0.0
 
 env_variables:
   STREAMLIT_SERVER_HEADLESS: "true"
